@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+body {
+    font-family: 'Georgia', serif; /* A classic serif font for a timeless feel */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f7f2e7, #d8c6b3); /* Soft gradient background */
+    color: #5d4a4a; /* Dark text for contrast */
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-bottom: 5px solid #b29c89; /* Elegant border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #6b4e4c; /* Deep brownish-red for a romantic feel */
+}
+
+p {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+section {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    background: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+section:hover {
+    background-color: #f9f7f2; /* Lighten on hover */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box {
+    text-align: center;
+    border: 2px solid #b29c89; /* Soft border for image boxes */
+    border-radius: 10px; /* Rounded corners for images */
+    padding: 15px;
+    transition: transform 0.2s; /* Transform effect on hover */
+    background-color: #f3e6d6; /* Light background for image boxes */
+}
+
+.image-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.timeline {
+    padding: 20px;
+}
+
+.timeline .event {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid #6b4e4c; /* Left border for events */
+    background: #ffffff; /* White background for events */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.timeline .event:hover {
+    background-color: #f4e9e1; /* Lighten on hover */
+}
+
+.timeline h3 {
+    color: #6b4e4c; /* Darker shade for event titles */
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.love-letter {
+    background: #f3e6d6; /* Soft background for love letter */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent footer */
+    border-top: 5px solid #b29c89; /* Elegant border for footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-style: italic; /* Italic style for footer */
+    color: #5d4a4a; /* Matching text color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Smaller title on smaller screens */
+    }
+
+    p {
+        font-size: 1.1em; /* Smaller paragraphs on smaller screens */
+    }
+
+    section {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Stack images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Even smaller title on very small screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller paragraphs on very small screens */
+    }
+
+    section {
+        margin: 20px; /* Less margin on very small screens */
+        padding: 15px; /* Less padding on very small screens */
+    }
+}
